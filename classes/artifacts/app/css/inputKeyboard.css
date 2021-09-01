@@ -1,0 +1,34 @@
+.inputKeyboardContainer {
+    background: #e7e7e7;
+    border-radius: 10px;
+    box-shadow: 2px 5px 14px #c7c7c7;
+    padding: 10px;
+    display: inline-block;
+}
+
+.inputKeyboardDisplay {
+    margin: 10px;
+    outline: none;
+    border: 0;
+    border-radius: 7px;
+    box-shadow: 2px 5px 14px #e0e0e0;
+    text-align: center;
+}
+
+.keyboardButton {
+    transition: transform 0.1s;
+}
+
+.keyboardButton:hover {
+    background: #4274d7;
+    border-radius: 10px;
+    transform: scale(1.1, 1.1);
+    color: aliceblue;
+}
+
+.keyboardButton:active {
+    background: #4274d7;
+    border-radius: 10px;
+    transform: scale(1, 1);
+    color: aliceblue;
+}

@@ -1,0 +1,39 @@
+body {
+	overflow-x: hidden;
+}
+
+thead tr {
+	background-color: #F9FBFC !important;
+}
+
+thead th {
+	border: none !important;
+}
+
+table i {
+	transition: color .3s;
+	cursor: pointer;
+}
+
+table i.danger:hover {
+	color: #dc3545 !important;
+}
+
+.modal-dialog {
+	overflow-y: initial !important;
+}
+
+.modal-body {
+	max-height: calc(100vh - 200px);
+	overflow-y: auto;
+}
+
+@media (max-width: 767.98px) {
+	.table td:nth-child(-n + 2) {
+		min-width: 200px;
+	}
+	
+	.table td:nth-child(3) {
+		min-width: 150px;
+	}
+}

@@ -1,0 +1,27 @@
+.customInputText {
+    outline: none;
+    border: 1px solid #4274d7;
+    border-radius: 10px;
+}
+
+.customInputText:focus {
+    border: 5px solid #4274d7;
+    animation-name: borderAnimation;
+    animation-duration: 100ms;
+}
+
+.toBeTyped {
+    background: #feaf20;
+    padding: 7px;
+    border-radius: 5px;
+    box-shadow: 5px 2px 11px #a4a4a4;
+}
+
+@keyframes borderAnimation {
+    from {
+        border: 1px solid #4274d7;
+    }
+    to {
+        border: 5px solid #4274d7;
+    }
+}

@@ -1,0 +1,376 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+}
+
+.boldVisibleText {
+    font-family: fantasy;
+}
+
+.progress {
+    height: 20px;
+    transition: height .4s;
+}
+
+.progress .progress-bar span {
+    font-size: 0;
+    color: black;
+    transition: font-size .4s;
+}
+
+.progress:hover {
+    height: 40px;
+}
+
+.progress:hover .progress-bar span {
+    font-size: 24px;
+}
+
+table#operation {
+    font-size: 1.4rem !important;
+}
+
+td.text {
+    padding: 10px 5px;
+}
+
+td.secondNumber {
+    border-bottom: 5px solid #282828;
+}
+
+input.cell {
+    width: 100%;
+    max-width: 80px;
+    padding: 10px 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+input.report.cell {
+    border: 0;
+    outline: none;
+    background: #feaf2091;
+    border-radius: 100px;
+    margin: 10px;
+}
+
+input.result.cell {
+    border: 0;
+    margin-top: 10px;
+    border-radius: 100px;
+    background: #4274d76b;
+    outline: none;
+}
+
+#title_Disc {
+    text-align: center;
+}
+
+#ulDisc {
+    list-style-type: none;
+}
+
+#ulDisc > li {
+    padding: 0.5em;
+    margin-top: 2em;
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+li.list-inline-item img {
+    pointer-events: none;
+}
+
+.intervalNumber {
+    border: 5px solid black;
+}
+
+.draggable {
+    border: 5px solid blue;
+    border-radius: 40px;
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.responsiveContainer {
+    margin-top: 70px;
+}
+
+.mr30 {
+    margin-right: 30px;
+}
+
+.progress-bar-smallscreen {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    * {
+        font-size: 1em;
+    }
+
+    .fontChoiseBtn {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    #ulDisc > li {
+        font-size: 1.6em;
+        display: block;
+        margin: 2em auto auto;
+    }
+
+    .droppable {
+        width: 80px;
+        height: 80px;
+        margin: 2em auto auto;
+
+    }
+
+    .responsiveContainer {
+        margin-top: 5px;
+    }
+
+    .mr30 {
+        margin-right: 10px;
+    }
+
+    .progress-bar-smallscreen {
+        display: flex;
+    }
+
+    input.report.cell {
+        margin: 5px;
+    }
+}
+
+.fade {
+    -webkit-animation: fade 4s;
+    animation: fade 4s;
+    -moz-animation: fade 4s;
+    -o-animation: fade 4s;
+}
+
+@-webkit-keyframes fade {
+
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-moz-keyframes fade {
+
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@-o-keyframes fade {
+
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+
+}
+
+.borderino {
+    border-style: solid;
+}
+
+.btn3d {
+    position: relative;
+    top: -6px;
+    border: 0;
+    transition: all 40ms linear;
+    margin-top: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    box-shadow: 5px 2px 11px #4b4b4b;
+}
+
+.btn3d:active:focus,
+.btn3d:focus:hover,
+.btn3d:focus {
+    -moz-outline-style: none;
+    outline: medium none;
+}
+
+.btn3d:active,
+.btn3d.active {
+    top: 2px;
+}
+
+.btn3d.btn-white {
+    color: #666666;
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.10) inset, 0 8px 0 0 #f5f5f5, 0 8px 8px 1px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.btn3d.btn-white:active,
+.btn3d.btn-white.active {
+    color: #666666;
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, .1);
+    background-color: #fff;
+}
+
+.btn3d.btn-default {
+    color: #666666;
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 2px rgba(255, 255, 255, 0.10) inset, 0 8px 0 0 #BEBEBE, 0 8px 8px 1px rgba(0, 0, 0, .2);
+    background-color: #f9f9f9;
+}
+
+.btn3d.btn-default:active,
+.btn3d.btn-default.active {
+    color: #666666;
+    box-shadow: 0 0 0 1px #ebebeb inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, .1);
+    background-color: #f9f9f9;
+}
+
+.btn3d.btn-primary {
+    background-color: #4274D7;
+}
+
+.btn3d.btn-primary:active,
+.btn3d.btn-primary.active {
+    background-color: #4274D7;
+}
+
+.btn3d.btn-success {
+    background-color: #78d739;
+
+}
+
+.btn3d.btn-success:active,
+.btn3d.btn-success.active {
+    background-color: #78d739;
+}
+
+.btn3d.btn-info {
+    background-color: #39B3D7;
+}
+
+.btn3d.btn-info:active,
+.btn3d.btn-info.active {
+    background-color: #39B3D7;
+}
+
+.btn3d.btn-warning {
+    background-color: #FEAF20;
+}
+
+.btn3d.btn-warning:active,
+.btn3d.btn-warning.active {
+    background-color: #FEAF20;
+}
+
+.btn3d.btn-danger {
+    box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #AA0000, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #D73814;
+}
+
+.btn3d.btn-danger:active,
+.btn3d.btn-danger.active {
+    box-shadow: 0 0 0 1px #b93802 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #D73814;
+}
+
+.btn3d.btn-magick {
+    color: #fff;
+    box-shadow: 0 0 0 1px #9a00cd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #9823d5, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
+    background-color: #bb39d7;
+}
+
+.btn3d.btn-magick:active,
+.btn3d.btn-magick.active {
+    box-shadow: 0 0 0 1px #9a00cd inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
+    background-color: #bb39d7;
+}
+
+.btn3d:hover {
+    transform: scale(1.1)
+}
+
+.responsivePlaceholder::placeholder {
+    color: #5c5c5c;
+    font-size: 0.8em;
+}
+
+.droppable:hover {
+    transform: scale(1.2)
+}
+
+.linkStyle:hover {
+    text-decoration: underline;
+}
+
+.questionNumberContainer {
+    background: #e7e7e7;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+.f-size-65-35 {
+    font-size: 65px;
+}
+
+.infoText {
+    font-family: sans-serif;
+    font-size: 23px;
+}
+
+.positionNumberRow {
+    background: #e7e7e7;
+    border-radius: 10px;
+}
+
+@media only screen and (max-width: 550px) {
+    * {
+        font-size: 12px;
+    }
+
+    .f-size-65-35 {
+        font-size: 35px;
+    }
+}
+
+.riportoText {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}

@@ -1,0 +1,25 @@
+.btnListen {
+    border: 0;
+    border-radius: 50px;
+    background: rgb(132 191 255);
+    padding: 15px;
+    box-shadow: 5px 2px 11px #aeaeae;
+}
+
+.btnListen:hover {
+    transform: scale(1.1);
+}
+
+.btnListen:active {
+    transform: scale(1);
+}
+
+.btnListen:focus {
+    outline: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .btnListen {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,90 @@
+#floatingReadButton {
+    bottom: 98px;
+    right: 30px;
+    outline: none;
+    border: none;
+}
+
+#floatingSkipButton {
+    bottom: 40px;
+    right: 30px;
+}
+
+.floatBigContainer {
+    width: 100%;
+    position: absolute;
+    top: -60px;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+.floatBig {
+    background: #feaf20;
+    padding: 4px;
+    border-radius: 120px;
+    box-shadow: 5px 2px 11px #4b4b4b;
+}
+
+.readButtonContainer:hover {
+    transform: scale(1.2)
+}
+
+.readButtonContainer:active {
+    transform: scale(1.1)
+}
+
+.float {
+    display: none;
+}
+
+i .fa-volume-up:hover {
+    color: #343a40;
+}
+
+@media only screen and (max-width: 800px) {
+    .floatBig {
+        display: none;
+    }
+
+    .float {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: #feaf20;
+        color: #343434;
+        border-radius: 50px;
+        text-align: center;
+        z-index: 3;
+        box-shadow: 5px 2px 11px #4b4b4b;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.5;
+    }
+
+    .my-float {
+        margin-top: 22px;
+    }
+
+    .float:hover {
+        opacity: 1;
+        animation-name: opacityAnim;
+        animation-duration: 0.5s;
+        transform: scale(1.2)
+    }
+
+    .float:active {
+        transform: scale(1.1)
+    }
+}
+
+@keyframes borderAnimation {
+    from {
+        border: 7px solid #4274d7;
+    }
+    to {
+        border: 10px solid #ffa400;
+    }
+}

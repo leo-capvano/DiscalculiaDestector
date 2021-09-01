@@ -1,0 +1,55 @@
+/* tooltipListen container */
+.tooltipListen {
+    position: relative;
+    top: -25px;
+}
+
+/* tooltipListen text */
+.tooltipListen .tooltiptextListen {
+    opacity: 0;
+    width: 120px;
+    background-color: #0000008a;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+    font-size: medium;
+    /* Position the tooltipListen text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltipListen .tooltiptextListen::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0000008a transparent transparent transparent;
+}
+
+@keyframes fade {
+
+    0% {
+        opacity: 1
+    }
+    50% {
+        opacity: 1
+    }
+    100% {
+        opacity: 0
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .tooltipListen {
+        top: -40px;
+    }
+
+    .tooltipListen .tooltiptextListen {
+        width: 70px;
+        font-size: 10px;
+    }
+}

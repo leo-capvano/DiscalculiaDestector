@@ -1,0 +1,56 @@
+.card-header {
+	background: #396afc;
+    background: -webkit-linear-gradient(to bottom, #396afc, #007bff);
+    background: linear-gradient(to bottom, #396afc, #007bff);
+}
+
+.quiz-action {
+	cursor: pointer;
+}
+
+.quiz-action i {
+	transition: font-size .3s;
+}
+
+.quiz-action .text-white-50 {
+	transition: color .3s;
+}
+
+.quiz-action:hover .text-white-50 {
+	color: white !important;
+}
+
+
+.quiz-action:hover i {
+	font-size: 2rem;
+}
+
+#table > .row {
+	padding: 1rem .75rem;
+	margin: 0 -5px;
+	border-bottom: 1px #E6E8EC solid;
+}
+
+#thead {
+	background-color: #F9FBFC;
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: none !important;
+}
+
+#table i {
+	transition: color .3s;
+}
+
+#table i:hover {
+	cursor: pointer;
+}
+
+#table i.danger:hover {
+	color: #dc3545 !important;
+}
+
+#table i.primary:hover {
+	color: #007bff !important;
+}

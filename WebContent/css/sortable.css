@@ -1,0 +1,44 @@
+.sortable-element {
+    width: 180px;
+    height: 180px;
+    font-size: 66pt;
+    background: #feaf20;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 55px;
+}
+
+.sortable-element:hover {
+    transform: scale(1.1);
+}
+
+.sortable-element.fractional {
+    font-size: 44pt;
+    line-height: 1.5;
+}
+
+.sortable-chosen .sortable-element{
+    background: #4D88FD;
+}
+
+@media only screen and (max-width: 800px) {
+    .sortable-element {
+        width: 115px;
+        height: 115px;
+        font-size: 33pt;
+        cursor: pointer;
+        border-radius: 38px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sortable-element {
+        width: 65px;
+        height: 65px;
+        font-size: 15pt;
+        cursor: pointer;
+        border-radius: 22px;
+    }
+}

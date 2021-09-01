@@ -1,0 +1,13 @@
+.responsiveSkipContainerSmall {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    .responsiveSkipContainerBig {
+        display: none;
+    }
+
+    .responsiveSkipContainerSmall {
+        display: flex;
+    }
+}

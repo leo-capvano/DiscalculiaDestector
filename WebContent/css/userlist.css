@@ -1,0 +1,22 @@
+.round-image-wrapper {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.no-profile-picture.female {
+    background-image: url(../images/female-avatar.svg);
+}
+
+.no-profile-picture.male {
+    background-image: url(../images/male-avatar.svg);
+}
+
+.fa-mars {
+    color: #007bff;
+}
+
+.fa-venus {
+    color: #ed4e6e;
+}

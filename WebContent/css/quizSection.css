@@ -1,0 +1,71 @@
+#table > .row {
+	padding: 1rem .75rem;
+	margin: 0 -5px;
+	border-bottom: 1px #E6E8EC solid;
+}
+
+#table > .row:not(:first-child):hover {
+	cursor: pointer;
+	color: #212529;
+    background-color: rgba(0,0,0,.075);
+    transition: background-color .2s;
+}
+
+#thead {
+	background-color: #F9FBFC;
+	border-radius: 10px;
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom: none !important;
+}
+
+.row[aria-expanded="true"] {
+	background-color: #2F3844;
+	color: white;
+	border-bottom: none !important;
+	border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.row[aria-expanded="true"]:hover {
+	background-color: #2F3844 !important;
+	color: white !important;
+}
+
+.row[aria-expanded="true"] i.fa-angle-down {
+	transform: rotate(-180deg);
+	color: white;
+}
+
+.sub-menu {
+	border-left: 3px solid #2F3844;
+}
+
+.sub-menu > .row {
+	padding: 1rem 0.75rem 1rem 2rem;
+	cursor: pointer;
+}
+
+.sub-menu > .row:hover {
+	background-color: rgba(0,0,0,.075);
+}
+
+.sub-menu > .row.disabled {
+	pointer-events: none;
+}
+
+i {
+	transition: all .3s;
+}
+
+i:hover {
+	cursor: pointer;
+}
+
+i.danger:hover {
+	color: #dc3545 !important;
+}
+
+i.primary:hover {
+	color: #007bff !important;
+}

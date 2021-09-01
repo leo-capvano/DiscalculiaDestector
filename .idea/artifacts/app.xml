@@ -1,0 +1,24 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="app">
+    <output-path>$PROJECT_DIR$/classes/artifacts/app</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Tirocinio" />
+          <element id="jpa-descriptors" facet="Tirocinio/jpa/JPA" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="module" name="mysql-connector-java-5.1.38-bin.jar" module-name="Tirocinio" />
+          <element id="library" level="module" name="eclipselink.jar" module-name="Tirocinio" />
+          <element id="library" level="module" name="bigfraction-1.1.0.jar" module-name="Tirocinio" />
+          <element id="library" level="module" name="gson-2.2.2.jar" module-name="Tirocinio" />
+          <element id="library" level="module" name="mail.jar" module-name="Tirocinio" />
+          <element id="library" level="module" name="javax.persistence_2.1.0.v201304241213.jar" module-name="Tirocinio" />
+          <element id="library" level="module" name="javax.activation-1.2.0.jar" module-name="Tirocinio" />
+          <element id="library" level="project" name="Java EE 6-Java EE 6" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="Tirocinio/web/Web" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,93 @@
+html {
+    height: 100%;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: auto;
+}
+
+body {
+    min-height: 100%;
+    background: #396afc; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #396afc, #007bff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #396afc, #007bff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.hoverable {
+    cursor: pointer;
+}
+
+.hoverable * {
+    pointer-events: none;
+}
+
+/* If the device support hover */
+@media (hover: hover) {
+    .hoverable {
+        transition: margin .5s;
+    }
+	
+    .hoverable:hover {
+        margin-top: 0 !important;
+    }
+}
+
+/*Animation*/
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(0,60%,0);
+        transform: translate3d(0,60%,0)
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0)
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fadeOutDown {
+    -webkit-animation-name: fadeOutDown;
+    animation-name: fadeOutDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeOutDown {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);
+        transform: translate3d(0,100%,0)
+    }
+}

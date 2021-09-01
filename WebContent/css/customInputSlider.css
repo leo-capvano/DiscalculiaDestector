@@ -1,0 +1,91 @@
+/*custom input slider*/
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background: #d3d3d3;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #008b00;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #008b00;
+    cursor: pointer;
+}
+
+.slider:active::-webkit-slider-thumb {
+    transform: scale(1.1)
+}
+
+input[type=range]:hover::-webkit-slider-thumb {
+    box-shadow: 0 0 0 7px #4DAE4D;
+}
+
+.sliderButton {
+    background: #4274d7;
+    color: #f1f1f1;
+    border: none;
+    transition: background 0.4s ease;
+    border-radius: 5px;
+    pointer-events: none;
+}
+
+.sliderButtonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.arrow-up {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+
+    border-bottom: 5px solid #4274d7;
+}
+
+.arrowContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen and (max-width: 800px) {
+    .slider {
+        height: 15px;
+    }
+
+    .slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #008b00;
+        cursor: pointer;
+    }
+
+    .slider::-moz-range-thumb {
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        background: #008b00;
+        cursor: pointer;
+    }
+}

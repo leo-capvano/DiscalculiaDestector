@@ -1,0 +1,49 @@
+.spawn-area {
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.spawned-bubble {
+    position: absolute;
+    border-radius: 50%;
+    background-color: #007BFF;
+}
+
+.ballAreaContainer {
+    border: 10px solid #4274d7;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.ballAreaCol {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.guessAreaContainer {
+    border: 7px solid #4274d7;
+    border-radius: 15px;
+    padding: 10px;
+    animation: borderAnimation 100ms;
+    outline: none;
+}
+
+.guessAreaContainer:hover {
+    border: 10px solid #ffa400;
+}
+
+
+@keyframes borderAnimation {
+    from {
+        border: 7px solid #4274d7;
+    }
+    to {
+        border: 10px solid #ffa400;
+    }
+}

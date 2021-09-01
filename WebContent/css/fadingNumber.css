@@ -1,0 +1,13 @@
+.fadingNumber {
+    background: #feaf20;
+    border: 4px solid #343a40;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 100px;
+}
+
+@media only screen and (max-width: 800px) {
+    .fadingNumber {
+        font-size: 65px;
+    }
+}

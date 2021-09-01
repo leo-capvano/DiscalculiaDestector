@@ -1,0 +1,58 @@
+.dragAndDrop {
+    position: Relative;
+    background-color: rgba(86, 130, 204, 0.85);
+    padding: 10px;
+    cursor: Move;
+    border-radius: 10px;
+    font-size: 2.1em;
+    box-shadow: 5px 2px 11px #a4a4a4;
+    border: 2px solid black;
+}
+
+.droppableTarget {
+    margin-right: 30px;
+    background: rgba(86, 130, 204, 0.85);
+    border-radius: 10px;
+    padding: 28px;
+    box-shadow: 5px 2px 11px #a4a4a4;
+    cursor: pointer;
+}
+
+.droppableTargetIcon {
+    width: 35px;
+}
+
+.onlyMobileText {
+    display: none;
+}
+
+.onlyDesktopText {
+    display: block;
+}
+
+@media only screen and (max-width: 800px) {
+    .droppableTarget {
+        padding: 5px;
+    }
+
+    .dragAndDrop {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .droppableTargetIcon {
+        width: 20px;
+    }
+
+    .onlyMobileText {
+        display: block;
+    }
+
+    .onlyDesktopText {
+        display: none;
+    }
+}
+
+.droppableTarget:hover {
+    transform: scale(1.1);
+}
