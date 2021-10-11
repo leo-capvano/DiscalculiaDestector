@@ -8,6 +8,7 @@
 #floatingSkipButton {
     bottom: 40px;
     right: 30px;
+    border: none;
 }
 
 .floatBigContainer {
